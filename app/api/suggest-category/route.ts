@@ -2,20 +2,7 @@ import { NextResponse } from 'next/server'
 import { generateText } from "ai"
 import { openai } from "@ai-sdk/openai"
 import { simpleExpenseTools } from "@/lib/expense-tools"
-
-// Define valid categories
-export const CATEGORIES = [
-  'Groceries',
-  'Restaurants',
-  'Transportation',
-  'Entertainment',
-  'Shopping',
-  'Health',
-  'Education',
-  'Housing',
-  'Utilities',
-  'Other'
-] as const;
+import { CATEGORIES } from "@/lib/constants"
 
 type Category = typeof CATEGORIES[number];
 

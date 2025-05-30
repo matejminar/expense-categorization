@@ -76,7 +76,7 @@ export async function POST(request: Request) {
     Current datetime: ${locationContext.datetime}
     Nearby expenses: ${JSON.stringify(locationContext.nearbyExpenses)}`;
 
-    console.log('Sending request to OpenAI...');
+    console.log('Sending request to OpenAI...', prompt);
     const { text } = await generateText({
       model: openai("gpt-4o-mini"),
       prompt,

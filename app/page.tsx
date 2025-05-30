@@ -75,16 +75,16 @@ export default function FinanceTracker() {
     // Simulate location fetch with some realistic coordinates around a city
     setTimeout(() => {
       const locations = [
-        { lat: 48.2082, lng: 16.3719, label: "Vienna city center" },
+        // { lat: 48.2082, lng: 16.3719, label: "Vienna city center" },
         { lat: 48.2035, lng: 16.3618, label: "Naschmarkt area" },
         { lat: 48.2167, lng: 16.3833, label: "Prater park" },
         { lat: 48.2100, lng: 16.3700, label: "Stephansplatz" },
-        { lat: 48.1865, lng: 16.3126, label: "Schönbrunn Palace" },
+        // { lat: 48.1865, lng: 16.3126, label: "Schönbrunn Palace" },
       ]
       const randomLocation = locations[Math.floor(Math.random() * locations.length)]
       // Add some random variation to simulate exact location
-      const lat = randomLocation.lat + (Math.random() - 0.5) * 0.01
-      const lng = randomLocation.lng + (Math.random() - 0.5) * 0.01
+      const lat = randomLocation.lat + (Math.random() - 0.5) * 0.002
+      const lng = randomLocation.lng + (Math.random() - 0.5) * 0.002
 
       setCurrentLocation({ lat, lng, label: randomLocation.label })
       setIsLoadingLocation(false)
@@ -237,8 +237,7 @@ export default function FinanceTracker() {
               <Label htmlFor="amount">Amount (€)</Label>
               <Input
                 id="amount"
-                type="number"
-                step="0.01"
+                type="text"
                 placeholder="0.00"
                 value={amount}
                 onChange={(e) => setAmount(e.target.value)}

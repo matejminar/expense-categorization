@@ -10,4 +10,5 @@ export const CATEGORIES = [
   'Housing',
   'Utilities',
   'Other',
+  'Microspends',
 ] as const;

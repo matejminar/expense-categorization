@@ -83,7 +83,7 @@ export async function POST(request: Request) {
       temperature: 0.7,
       tools: simpleExpenseTools,
 
-      maxSteps: 3
+      maxSteps: 10
     });
     console.log('Received response from OpenAI:', text);
 

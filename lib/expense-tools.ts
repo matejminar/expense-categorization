@@ -191,7 +191,7 @@ export const getTypicalAmountRange = tool({
     category: z.string().describe("The expense category"),
   }),
   execute: async ({ category }) => {
-    console.log('TOOOOOL: getTypicalAmountRange')
+    console.log('TOOL: getTypicalAmountRange')
     const ranges: Record<string, { min: number; max: number }> = {
       Groceries: { min: 10, max: 100 },
       Restaurants: { min: 15, max: 80 },
@@ -202,7 +202,8 @@ export const getTypicalAmountRange = tool({
       Education: { min: 20, max: 300 },
       Housing: { min: 100, max: 2000 },
       Utilities: { min: 20, max: 300 },
-      Other: { min: 0, max: 1 },
+      Microspends: { min: 0, max: 1 },
+      Other: { min: 0, max: 100 },
     };
     return ranges[category] || { min: 0, max: 100 };
   },
@@ -215,7 +216,7 @@ export const getDayOfWeek = tool({
     date: z.string().describe("Date in ISO format"),
   }),
   execute: async ({ date }) => {
-    console.log('TOOOOOL: getDayOfWeek')
+    console.log('TOOL: getDayOfWeek')
     const day = new Date(date).toLocaleDateString('en-US', { weekday: 'long' });
     return { dayOfWeek: day };
   },

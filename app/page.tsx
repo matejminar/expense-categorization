@@ -78,7 +78,7 @@ export default function FinanceTracker() {
         // { lat: 48.2082, lng: 16.3719, label: "Vienna city center" },
         { lat: 48.2035, lng: 16.3618, label: "Naschmarkt area" },
         { lat: 48.2167, lng: 16.3833, label: "Prater park" },
-        { lat: 48.2100, lng: 16.3700, label: "Stephansplatz" },
+        // { lat: 48.2100, lng: 16.3700, label: "Stephansplatz" },
         // { lat: 48.1865, lng: 16.3126, label: "Schönbrunn Palace" },
       ]
       const randomLocation = locations[Math.floor(Math.random() * locations.length)]

@@ -3,6 +3,9 @@ Simple expense tracking app that chooses the right spend category based on previ
 
 This serves as a testing ground for agent monitoring.
 
+![CleanShot 2025-06-03 at 12 23 31](https://github.com/user-attachments/assets/572aa091-210a-4a1d-b0f5-8433fd6f0222)
+
+
 ## Getting Started
 
 Add `OPENAI_API_KEY` in your `.env` file.

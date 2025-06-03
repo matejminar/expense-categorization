@@ -1,8 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## Intro
+Simple expense tracking app that chooses the right spend category based on previous expenses.
+
+This serves as a testing ground for agent monitoring.
+
+![CleanShot 2025-06-03 at 12 23 31](https://github.com/user-attachments/assets/572aa091-210a-4a1d-b0f5-8433fd6f0222)
+
 
 ## Getting Started
 
-First, run the development server:
+Add `OPENAI_API_KEY` in your `.env` file.
+
+Run the development server:
 
 ```bash
 npm run dev

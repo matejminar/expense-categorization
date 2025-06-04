@@ -82,6 +82,11 @@ export async function POST(request: Request) {
       prompt,
       temperature: 0.7,
       tools: simpleExpenseTools,
+      experimental_telemetry: {
+        isEnabled: true,
+        recordInputs: true,
+        recordOutputs: true,
+      },
 
       maxSteps: 10
     });
